@@ -1,51 +1,42 @@
 export default {
-	// Target: https://go.nuxtjs.dev/config-target
+
+	// target
 	target: 'static',
 
-	// Global page headers: https://go.nuxtjs.dev/config-head
+	// components
+	components: true,
+
+	// css
+	css: [ '@/assets/global.scss' ],
+
+	// head
 	head: {
-		title: 'flavionn.com',
-		htmlAttrs: {
-			lang: 'en'
-		},
+		title: process.env.APP_NAME,
 		meta: [
 			{ charset: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
-			{ hid: 'description', name: 'description', content: '' }
+			{ hid: 'description', name: 'description', content: process.env.APP_DESCRIPTION },
+			{ hid: 'og:site_name', property: 'og:site_name', content: process.env.APP_NAME }
 		],
 		link: [
 			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
 		]
 	},
 
-	// Global CSS: https://go.nuxtjs.dev/config-css
-	css: [
-		'@/assets/global.scss'
-	],
-
-	// Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-	plugins: [
-	],
-
-	// Auto import components: https://go.nuxtjs.dev/config-components
-	components: true,
-
-	// Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+	// build modules
 	buildModules: [
+		'@nuxtjs/google-analytics',
+		'@nuxtjs/google-fonts',
 		'nuxt-vite',
-		'nuxt-windicss',
-		'@nuxtjs/google-fonts'
+		'nuxt-windicss'
 	],
 
-	// Modules: https://go.nuxtjs.dev/config-modules
-	modules: [
-	],
-
-	// Build Configuration: https://go.nuxtjs.dev/config-build
-	build: {
+	// google analytics
+	googleAnalytics: {
+		id: process.env.GOOGLE_ANALYTICS_ID
 	},
 
-	// Google fonts config
+	//  google fonts
 	googleFonts: {
 		families: {
 			Inter: [400, 500, 600, 700],

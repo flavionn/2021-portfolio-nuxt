@@ -23,9 +23,9 @@
   },
   "pnpm": {
     "overrides": {
+      "css-what@<5.0.1": ">=5.0.1",
       "glob-parent@<5.1.2": ">=5.1.2",
-      "normalize-url@<6.0.1 ": ">=6.0.1",
-      "css-what@<5.0.1 ": ">=5.0.1"
+      "normalize-url@<6.0.1": ">=6.0.1"
     }
   }
 }
