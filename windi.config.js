@@ -6,5 +6,8 @@ module.exports = {
 				serif: 'Bitter'
 			}
 		}
+	},
+	extract: {
+		exclude: ['node_modules_dev', 'node_modules_prod']
 	}
 }
