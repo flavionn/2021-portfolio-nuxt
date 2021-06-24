@@ -3,9 +3,6 @@ export default {
 	// target
 	target: 'static',
 
-	// ssr
-	ssr: false,
-
 	// components
 	components: true,
 
