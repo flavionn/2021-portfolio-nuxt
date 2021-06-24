@@ -5,3 +5,10 @@ div(class="max-w-xl mx-auto px-8 pt-24 pb-32 space-y-16")
 	Nuxt
 
 </template>
+
+<style lang="sass">
+
+a.nuxt-link-active
+	@apply text-pink-500
+
+</style>
