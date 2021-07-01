@@ -1,4 +1,4 @@
-[
+export default [
 	{
 		"name": "Email",
 		"url": "mailto:flavio8163@gmail.com"
