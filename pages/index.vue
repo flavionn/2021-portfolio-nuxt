@@ -3,7 +3,8 @@
 div(class="space-y-32")
 	title-hero-home {{ info.textHero }}
 	section-projects
-	section-about(:text="info.textAbout")
+	section-container(title="About")
+		p(v-html="info.textAbout")
 	section-profiles
 
 </template>

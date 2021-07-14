@@ -1,44 +1,49 @@
 <template lang="pug">
 
 div(class="space-y-16")
-	div(class="space-y-4")
+
+	header(class="space-y-4")
 		h1 {{ project.title }}
 		p(v-if="project.subtitle", v-html="project.subtitle")
 
-	template(v-if="project.screenFeatured")
-		div(:class="project.screenFeatured.classContainer")
-			responsive-image(:cloudinaryFilename="project.screenFeatured.cloudinaryFilename", :imgClass="project.screenFeatured.classImage")
+	responsive-media(
+		v-if="project.featured.public_id"
+		:classContainer="project.featured.class_container"
+		:classImage="project.featured.class_image"
+		:publicId="project.featured.public_id"
+		:version="project.featured.version"
+		)
 
 	p(v-if="project.description", v-html="project.description")
 
 	hr
 
-	section(v-if="project.links")
-		h2 Links
+	page-project-row-info(title="Links")
 		ul
 			li(v-for="item in project.links", class="flex space-x-2")
 				a(:href="item.url", target="_blank") {{ item.label }}
 				svg-icon-external-link
 
-	section(v-if="project.year")
-		h2 Year
+	page-project-row-info(title="Year")
 		span {{ project.year }}
 
-	section(v-if="project.did")
-		h2 What I did
+	page-project-row-info(title="What I did")
 		ul
 			li(v-for="item in project.did") {{ item }}
 
-	section(v-if="project.tools")
-		h2 Tools
+	page-project-row-info(title="Tools")
 		ul
 			li(v-for="item in project.tools") {{ item }}
 
-	template(v-if="project.screens")
-		div(class="space-y-1px")
-			template(v-for="item in project.screens")
-				div(:class="item.classContainer")
-					responsive-image(:cloudinaryFilename="item.cloudinaryFilename", :imgClass="item.classImage")
+	div(class="space-y-1px")
+		template(v-for="item in project.preview")
+			responsive-media(
+				v-if="item.public_id"
+				:classContainer="item.class_container"
+				:classImage="item.class_image"
+				:publicId="item.public_id"
+				:version="item.version"
+				)
 
 	section-projects
 	section-profiles
@@ -52,7 +57,7 @@ import projects from '@/content/projects'
 export default {
 	data() {
 		return {
-			project: projects.find(project => project.slug === this.$route.params.slug),
+			project: projects.find(project => project.slug === this.$route.params.slug)
 		}
 	},
 	head() {

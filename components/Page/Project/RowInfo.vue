@@ -1,8 +1,9 @@
 <template lang="pug">
 
-section(class="space-y-8")
-	h2(v-if="title") {{ title }}
-	slot
+div(class="flex")
+	h2(v-if="title", class="flex-1") {{ title }}
+	div(class="flex-1")
+		slot
 
 </template>
 
