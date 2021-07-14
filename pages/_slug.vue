@@ -1,7 +1,6 @@
 <template lang="pug">
 
 div(class="space-y-16")
-
 	header(class="space-y-4")
 		h1 {{ project.title }}
 		p(v-if="project.subtitle", v-html="project.subtitle")
@@ -44,9 +43,6 @@ div(class="space-y-16")
 				:publicId="item.public_id"
 				:version="item.version"
 				)
-
-	section-projects
-	section-profiles
 
 </template>
 

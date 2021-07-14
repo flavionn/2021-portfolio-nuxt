@@ -2,10 +2,10 @@
 
 div(class="space-y-32")
 	title-hero-home {{ info.textHero }}
-	section-projects
-	section-container(title="About")
-		p(v-html="info.textAbout")
-	section-profiles
+	div(class="space-y-16")
+		section-container(title="About")
+			p(v-html="info.textAbout")
+		hr
 
 </template>
 
