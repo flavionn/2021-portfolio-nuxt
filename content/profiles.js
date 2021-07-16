@@ -5,7 +5,7 @@ export default [
 	},
 	{
 		"name": "WhatsApp",
-		"url": "https://web.whatsapp.com/send?phone=5561994584642"
+		"url": "https://wa.me/5561994584642"
 	},
 	{
 		"name": "Github",
