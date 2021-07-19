@@ -28,7 +28,6 @@ export default {
 		const newSizes = []
 
 		for(const s of sizes) {
-			console.log(s)
 			if(s < this.mediaWidth) {
 				newSizes.push(parseInt(s))
 			}

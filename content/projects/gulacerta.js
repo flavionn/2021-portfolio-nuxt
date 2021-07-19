@@ -12,7 +12,7 @@ const data = [
 			"class_image": "w-350px mx-auto rounded-t",
 			"public_id": "gulacerta-home_bdhpot",
 			"version": "v1626284251",
-			"width": 1920,
+			"width": 1920
 		},
 		"preview": [
 			{
