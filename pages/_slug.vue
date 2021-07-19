@@ -11,6 +11,7 @@ div(class="space-y-16")
 		:classImage="project.featured.class_image"
 		:publicId="project.featured.public_id"
 		:version="project.featured.version"
+		:mediaWidth="project.featured.width"
 		)
 
 	p(v-if="project.description", v-html="project.description")
@@ -42,6 +43,7 @@ div(class="space-y-16")
 				:classImage="item.class_image"
 				:publicId="item.public_id"
 				:version="item.version"
+				:mediaWidth="item.width"
 				)
 
 </template>

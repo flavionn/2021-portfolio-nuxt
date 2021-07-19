@@ -11,20 +11,23 @@ const data = [
 			"class_container": "-mx-8 bg-gradient-to-tl from-green-300 to-blue-200 pt-16",
 			"class_image": "w-300px mx-auto rounded-t",
 			"public_id": "joaolimao-home-mobile-1_np3sxl",
-			"version": "v1625182767"
+			"version": "v1625182767",
+			"width": 425
 		},
 		"preview": [
 			{
 				"class_container": "-mx-8 bg-green-50 pt-16 flex justify-center",
 				"class_image": "w-300px mx-auto rounded-t",
 				"public_id": "joaolimao-home-mobile-3_lebtg9",
-				"version": "v1625182767"
+				"version": "v1625182767",
+				"width": 425
 			},
 			{
 				"class_container": "-mx-8 bg-gray-50 pt-16 flex justify-center",
 				"class_image": "w-300px mx-auto rounded-t",
 				"public_id": "joaolimao-single-mobile-1_ayxs6w",
-				"version": "v1625182767"
+				"version": "v1625182767",
+				"width": 425
 			}
 		],
 		"links": [

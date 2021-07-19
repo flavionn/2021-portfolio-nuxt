@@ -11,14 +11,16 @@ const data = [
 			"class_container": "-mx-8 bg-gradient-to-tl from-orange-200 to-yellow-200 pt-16",
 			"class_image": "w-350px mx-auto rounded-t",
 			"public_id": "anacosta-home_sdvpcg",
-			"version": "v1625182765"
+			"version": "v1625182765",
+			"width": 1280
 		},
 		"preview": [
 			{
 				"class_container": "-mx-8 bg-yellow-100 pt-16",
 				"class_image": "w-350px mx-auto rounded-t",
 				"public_id": "anacosta-single_ashwqf",
-				"version": "v1625182766"
+				"version": "v1625182766",
+				"width": 1280
 			}
 		],
 		"links": [

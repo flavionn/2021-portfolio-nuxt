@@ -20,10 +20,21 @@ export default {
 	data() {
 
 		const formats = [ 'jpg', 'webp' ]
-		const sizes = [ '300', '600', '1200' ]
+		var sizes = [ '300', '600', '1200' ]
 
 		var sourceSrcSet = []
 		var imgSrcSet = []
+
+		const newSizes = []
+
+		for(const s of sizes) {
+			console.log(s)
+			if(s < this.mediaWidth) {
+				newSizes.push(parseInt(s))
+			}
+		}
+
+		var sizes = [...newSizes, this.mediaWidth]
 
 		function makeImageUrl(publicId, version, size, format) {
 			const cloudinaryBaseUrl = 'https://res.cloudinary.com/flavionn/image/upload'
@@ -54,7 +65,7 @@ export default {
 
 		var sourceSrcSet = sourceSrcSet.toString()
 		var imgSrcSet = imgSrcSet.toString()
-		const imgSrc = makeImageUrl(this.publicId, this.version, '600', 'jpg')
+		const imgSrc = makeImageUrl(this.publicId, this.version, this.mediaWidth, 'jpg')
 
 		return {
 			sourceSrcSet,
@@ -66,7 +77,8 @@ export default {
 		'classContainer',
 		'classImage',
 		'publicId',
-		'version'
+		'version',
+		'mediaWidth'
 	]
 }
 

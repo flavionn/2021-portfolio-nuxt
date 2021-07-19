@@ -11,14 +11,16 @@ const data = [
 			"class_container": "-mx-8 bg-gradient-to-tl from-pink-300 to-red-400 pt-16",
 			"class_image": "w-350px mx-auto rounded-t",
 			"public_id": "ninocarvalho-home-1_ahrmnb",
-			"version": "v1625182768"
+			"version": "v1625182768",
+			"width": 1200
 		},
 		"preview": [
 			{
 				"class_container": "-mx-8 bg-red-200 pt-16",
 				"class_image": "w-350px mx-auto rounded-t",
 				"public_id": "ninocarvalho-single_uxdtjx",
-				"version": "v1625182769"
+				"version": "v1625182769",
+				"width": 1200
 			}
 		],
 		"links": [

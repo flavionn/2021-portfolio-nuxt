@@ -11,20 +11,23 @@ const data = [
 			"class_container": "-mx-8 bg-gradient-to-tl from-purple-400 to-pink-300 pt-16",
 			"class_image": "w-300px mx-auto rounded-t",
 			"public_id": "helenalamenza-home-mobile",
-			"version": "v1625059523"
+			"version": "v1625059523",
+			"width": 425
 		},
 		"preview": [
 			{
 				"class_container": "-mx-8 bg-pink-50 pt-16 flex justify-center",
 				"class_image": "w-300px mx-auto rounded-t",
 				"public_id": "helenalamenza-single-mobile",
-				"version": "v1625059523"
+				"version": "v1625059523",
+				"width": 425
 			},
 			{
 				"class_container": "-mx-8 bg-pink-200 py-24 flex justify-center",
 				"class_image": "w-350px shadow rounded",
 				"public_id": "helenalamenza-home-desktop",
-				"version": "v1625059524"
+				"version": "v1625059524",
+				"width": 1276
 			}
 		],
 		"links": [

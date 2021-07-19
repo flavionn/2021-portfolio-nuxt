@@ -11,20 +11,23 @@ const data = [
 			"class_container": "-mx-8 bg-gradient-to-tl from-yellow-100 to-orange-200 pt-16",
 			"class_image": "w-350px mx-auto rounded-t",
 			"public_id": "gulacerta-home_bdhpot",
-			"version": "v1626284251"
+			"version": "v1626284251",
+			"width": 1920,
 		},
 		"preview": [
 			{
 				"class_container": "-mx-8 bg-yellow-100 pt-16",
 				"class_image": "w-350px mx-auto rounded-t",
 				"public_id": "gulacerta-home-moments_ivtpfc",
-				"version": "v1626284251"
+				"version": "v1626284251",
+				"width": 1920
 			},
 			{
 				"class_container": "-mx-8 bg-orange-100 pt-16",
 				"class_image": "w-350px mx-auto rounded-t",
 				"public_id": "gulacerta-single-no-header_cqocx0",
-				"version": "v1626284254"
+				"version": "v1626284254",
+				"width": 1920
 			}
 		],
 		"links": [
