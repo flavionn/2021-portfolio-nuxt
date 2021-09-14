@@ -5,5 +5,12 @@
       "src": "nuxt.config.js",
       "use": "@nuxtjs/vercel-builder"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/resume",
+      "destination": "https://drive.google.com/file/d/1Bptc1hcRS5vAhwAijukORKFIPZM4E8bv/view",
+      "permanent": true
+    }
   ]
 }
